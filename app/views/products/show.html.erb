@@ -18,16 +18,16 @@
 <h3>Reviews</h3>
 
 <% if @product.reviews.any? %>
-  <ul>
-    <% @product.reviews.each do |review| %>
-      <li>
-        <%= review.content_body %>
-        <%= review.author_id.name %>
-      </li>
-    <% end %>
-  </ul>
 
-<% else %>
+    <% @reviews.each do |review| %>
+      <p>Reviewed by: <%= review.user.username %> </p>
+      <p> "<%= review.content_body %>" </p>
+
+
+    <% end %>
+
+
+  <% else %>
     <p>Be the first to review this product!</p>
 <% end %>
 

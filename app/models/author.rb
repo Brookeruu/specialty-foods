@@ -1,4 +1,0 @@
-class Author < ApplicationRecord
-  validate_presence_of :name
-  has_many :reviews
-end

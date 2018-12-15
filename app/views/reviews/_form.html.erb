@@ -1,0 +1,9 @@
+<%= render "layouts/errors", :object => @review %>
+
+<%= form_for [@product, @review] do |f| %>
+  <%= f.label :rating, "Rating" %>
+  <%= f.number_field :rating, min: 1, max: 5  %>
+  <%= f.label :content_body, "Write Review" %>
+  <%= f.text_area :content_body, cols: 30, rows: 10 %>
+  <%= f.submit %>
+<% end %>
