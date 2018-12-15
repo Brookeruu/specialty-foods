@@ -5,5 +5,10 @@ Rails.application.routes.draw do
 
   resources :products do
     resources :reviews
+    collection do
+      get 'usa'
+      get 'most_reviews'
+      get 'most_recent_products'
+    end
   end
 end

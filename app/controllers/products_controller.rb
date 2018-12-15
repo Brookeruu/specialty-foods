@@ -4,6 +4,10 @@ class ProductsController < ApplicationController
     @products = Product.all
   end
 
+  def usa
+    @usa_products = Product.made_in_usa
+  end
+
   def show
     @product = Product.find(params[:id])
     @reviews = @product.reviews
