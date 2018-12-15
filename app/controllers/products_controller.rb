@@ -12,6 +12,10 @@ class ProductsController < ApplicationController
     @most_reviews_products = Product.most_reviews
   end
 
+  def most_recent
+    @most_recent_products = Product.most_recent
+  end
+
   def show
     @product = Product.find(params[:id])
     @reviews = @product.reviews

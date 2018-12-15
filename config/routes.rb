@@ -8,7 +8,7 @@ Rails.application.routes.draw do
     collection do
       get 'usa'
       get 'most_reviews'
-      get 'most_recent_products'
+      get 'most_recent'
     end
   end
 end
