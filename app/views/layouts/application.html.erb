@@ -13,6 +13,7 @@
     <nav>
       <ul>
         <li> <%= link_to "Products Made in USA", usa_products_path %> </li>
+        <li> <%= link_to "Most Reviewed Products", most_reviews_products_path %> </li>
       <% if user_signed_in? %>
         <li>Logged in as <strong><%= current_user.username %></strong> </li>
         <li> <%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>

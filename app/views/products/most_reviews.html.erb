@@ -1,0 +1,10 @@
+<h2>Top Three Products Most Reviewed</h2>
+
+<ul>
+  <% @most_reviews_products.each do |product| %>
+    <li> <%= link_to product.name, product_path(product) %> </li>
+  <% end %>
+</ul>
+
+
+<%= link_to "Return to All Products", products_path %>
