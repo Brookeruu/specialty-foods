@@ -2,10 +2,10 @@
 
 <%= form_for [@product, @review] do |f| %>
   <%= f.label :rating, "Rating" %>
-  <%= f.number_field :rating, min: 1, max: 5  %>
+  <%= f.number_field :rating, min: 1, max: 5, :required => true  %>
   <br>
-  <%= f.label :content_body, "Write Review" %>
+  <%= f.label :content_body, "Write Review (50-250 characters)" %>
   <br>
-  <%= f.text_area :content_body, cols: 30, rows: 10 %>
+  <%= f.text_area :content_body, cols: 30, rows: 10, :required => true %>
   <%= f.submit %>
 <% end %>
