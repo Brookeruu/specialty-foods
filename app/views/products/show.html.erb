@@ -20,8 +20,8 @@
 <% if @product.reviews.any? %>
 
     <% @reviews.each do |review| %>
-      <p>Reviewed by: <%= review.user.username %> </p>
-      <p> "<%= review.content_body %>" </p>
+      <h5 class="review_title">Reviewed by: <%= review.user.username %> </h5>
+      <p class="review_body">"<%= review.content_body %>" </p>
 
 
     <% end %>

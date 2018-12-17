@@ -1,10 +1,16 @@
-<h2>This will be the products homepage</h2>
+<div class="title-container">
+  <h2>Products</h2>
+</div>
 
-<ul>
+<div class="all_products">
   <% @products.each do |product| %>
-    <li> <%= link_to product.name, product_path(product) %> </li>
+  <div class="product">
+    <div class="thumbnail">
+      <p> <%= link_to product.name, product_path(product) %> </p>
+    </div>
+  </div>
   <% end %>
-</ul>
+</div>
 
 <%= link_to "New Product", new_product_path %>
 
