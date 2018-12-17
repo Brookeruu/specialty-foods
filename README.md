@@ -1,24 +1,40 @@
-# README
+## Marina's Specialty Foods ##
+=================
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Author:
+Brooke Perry
 
-Things you may want to cover:
+### Description: ###
+------------
+Week 4 of Ruby, Independent Project:
 
-* Ruby version
 
-* System dependencies
+A website where a user can view a products sold by Marina's Specialty Foods. The user can view local (USA) products, the most recently added, and the most review. A user, once logged in, can also add a review. Adding and deleting products is functional, but admin authentication has not yet been added.
 
-* Configuration
+### Setup instructions: ###
+-------------------
+Make sure ruby is installed on your system, if not go here for instructions on installing ruby: https://www.ruby-lang.org/en/documentation/installation/
 
-* Database creation
 
-* Database initialization
+# Instructions for setup
 
-* How to run the test suite
+From the command line, run:
+```
+git clone https://github.com/Brookeruu/specialty-foods.git
+cd specialty-foods
+rails db:create
+rails db:seed
+rails server
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+Then in your browser go to localhost:3000
 
-* Deployment instructions
+##### Technologies Used
+* Ruby
+* Rails
 
-* ...
+##### Contact
+* Brooke Perry perrysbrooke@gmail.com
+
+_This software is licensed under the MIT licensed_
+Copyright(c) 2018 Brooke Perry
